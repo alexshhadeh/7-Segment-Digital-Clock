@@ -4,7 +4,7 @@
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
-}
+ }
 
 :root {
 	--dark-blue: #161853;
@@ -16,13 +16,14 @@
 }
 
 body {
+
 	font-family: 'Seven Segment';
 	height: 100vh;
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	flex-direction: column;
-	gap: 2rem;
+	gap: 1rem;
 	background: linear-gradient(var(--light-blue), var(--dark-blue));
 	color: var(--off-white);
 }
@@ -215,7 +216,7 @@ p {
 .digital-clock .second {
 	position: relative;
 	display: inline-block;
-	margin: 30px;
+	margin: 20px;
 	font-size: 0;
 }
 .digital-clock .hour::before,
@@ -224,22 +225,22 @@ p {
 .digital-clock .minute::after {
 	content: '';
 	position: absolute;
-	right: -40px;
-	width: 20px;
-	height: 20px;
+	right: -30px;
+	width: 15px;
+	height: 15px;
 	background-color: white;
 }
 .digital-clock .hour::before,
 .digital-clock .minute::before {
-	top: 80px;
+	top: 60px;
 }
 .digital-clock .hour::after,
 .digital-clock .minute::after {
-	top: 180px;
+	top: 130px;
 }
 .digital-clock svg {
 	display: inline-block;
-	margin: 20px;
+	margin: 10px;
 }
 .digital-clock svg .segment {
 	fill: rgba(0,0,0,.15);
